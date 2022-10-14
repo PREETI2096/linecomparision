@@ -19,13 +19,16 @@ public class LineComparison {
 		
 		System.out.println("Length of second line = " + length2);
 		
-		System.out.println(length1.equals(length2));
+		System.out.println(length1.compareTo(length2));
 		
-		if(length1.equals(length2)) 
-			System.out.println("Both lines have equal length");
-		else 
-			System.out.println("Both lines have  different length");
+		if(length1.compareTo(length2) == 1) { 
+			System.out.println("First line is greater than second line");
 		}
+		else if(length1.compareTo(length2) == -1) { 
+			System.out.println("First line is lesser than second line");
+		}
+		else
+			System.out.println("Both lines are Equal");
 		
 	}
-
+}
