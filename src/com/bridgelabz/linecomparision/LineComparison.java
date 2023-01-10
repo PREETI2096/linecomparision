@@ -13,5 +13,4 @@ public class LineComparison {
 		System.out.println("Length of line = " + length);
 
 	}
-
 }
